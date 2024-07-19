@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+#heading{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px;
+    font-size: xx-large;
+    color: rgb(1, 251, 255);
+    animation: rotateborder 2s infinite alternate ease-in-out;
+}
+.whole{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.clickmebutton{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    animation: rotateborder 1s infinite alternate ease-in-out;
+    
+}
+.clickmebutton:hover{
+    box-shadow: 0px 0px 4px 5px rgb(45, 205, 241) ;
+}
+#clickme:hover{
+    color: white;
+}
+
+.display{
+    background-color: rgb(64, 213, 246);
+    border: 3px solid white;
+    font-style: italic;
+    font-size: large;
+    width: 30vw;   
+    height: 40vh;
+    scrollbar-width: 5px;
+    scroll-behavior: smooth;
+    overflow-y:scroll;
+    box-shadow: 0px 0px 3px 3px rgb(251, 220, 220);
+}
+.display::-webkit-scrollbar {
+    /* display: none; */
+    scrollbar-width: thin;
+  }
+.divinhtml{   
+    padding: 10px;
+}
+
+/* added animated feeling to boxes
+ */
+@keyframes rotateborder {
+0%{
+    box-shadow: 3px 3px 3px 3px rgb(45, 205, 241);
+}
+100%{
+    box-shadow: -3px -3px 3px 3px rgb(45, 205, 241); 
+}
+}
